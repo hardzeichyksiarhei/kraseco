@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login-registration.css">
+</head>
+<body>
+    <div class="registration-page">
+        <div class="registration-panel">
+            <div class="registration-panel__header">
+                <img src="./img/logo.png" alt="Logo">
+                <h2 class="registration-panel__title">Личный кабинет</h2>
+            </div>
+            <div class="registration-panel__body">
+                <div class="registration-tabs">
+                    <ul class="registration-tabs__nav">
+                      <li class="active"><a href="#individuals">Физические лица</a></li>
+                      <li class=""><a href="#legal-entities">Юридические лица</a></li>
+                    </ul>
+                    <div id="individuals" class="registration-tabs__tab">
+                        <form action="" class="registration-form individuals-form">
+                            <div class="registration-form__group">
+                                <label for="email" class="registration-form__label">Логин</label>
+                                <input id="email" name="email" class="registration-form__control" placeholder="E-mail или СНИЛС">
+                            </div>
+                            <div class="registration-form__group">
+                                <label for="password" class="registration-form__label">Пароль</label>
+                                <input id="password" name="password" type="password" class="registration-form__control" placeholder="∗∗∗∗∗∗∗">
+                            </div>
+                            <div class="registration-form__footer">
+                                <button class="btn registration-form__submit" type="submit">Регистрация</button>
+                                <div class="registration-form__meta">
+                                    <label for="confirm"><input id="confirm" name="confirm" type="checkbox"> <span>ознакомлен с <a href="#" target="_blank">публичной офертой</a> и <a href="#" target="_blank">политикой в области обработки персональных данных</a>, все условия принимаю</span></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="legal-entities" class="registration-tabs__tab">
+                        <form action="" class="registration-form individuals-form">
+                            <div class="registration-form__group">
+                                <label for="email" class="registration-form__label">E-mail</label>
+                                <input id="email" name="email" type="email" class="registration-form__control" placeholder="E-mail или СНИЛС">
+                            </div>
+                            <div class="registration-form__group">
+                                <label for="last_name" class="registration-form__label">Фамилия</label>
+                                <input id="last_name" name="last_name" class="registration-form__control">
+                            </div>
+                            <div class="registration-form__group">
+                                <label for="first_name" class="registration-form__label">Имя</label>
+                                <input id="first_name" name="first_name" class="registration-form__control">
+                            </div>
+                            <div class="registration-form__group">
+                                <label for="middle_name" class="registration-form__label">Отчество</label>
+                                <input id="middle_name" name="middle_name" class="registration-form__control">
+                            </div>
+                            <div class="registration-form__group">
+                                <label for="smils" class="registration-form__label">СНИЛС</label>
+                                <input id="smils" name="smils" class="registration-form__control">
+                            </div>
+                            <div class="registration-form__group">
+                                <label for="phone" class="registration-form__label">Телефон</label>
+                                <input id="phone" name="phone" class="registration-form__control">
+                            </div>
+                            <div class="registration-form__group">
+                                <label for="password" class="registration-form__label">Пароль</label>
+                                <input id="password" type="password" name="password" class="registration-form__control">
+                            </div>
+                            <div class="registration-form__group">
+                                <label for="confirm_password" class="registration-form__label">Повторить пароль</label>
+                                <input id="confirm_password" type="password" name="confirm_password" class="registration-form__control">
+                            </div>
+                            <div class="registration-form__footer">
+                                <button class="btn registration-form__submit" type="submit">Регистрация</button>
+                                <div class="registration-form__meta">
+                                    <label for="confirm"><input id="confirm" name="confirm" type="checkbox"> <span>ознакомлен с <a href="#" target="_blank">публичной офертой</a> и <a href="#" target="_blank">политикой в области обработки персональных данных</a>, все условия принимаю</span></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+            </div>
+            <div class="registration-panel__footer">
+                <a href="#" class="btn-link btn-link--active">Вход</a>
+                <br/>
+                <a href="#" class="btn-link">Вернуться на сайт</a>
+            </div>
+            <div class="registration-panel__sub-footer">
+                <span class="registration-panel__copyright">&copy; 2020 АО «КРАСЭКО»</span>
+                <a href="#" target="_blank">Конфиденциальность</a>
+                <a href="#" target="_blank">Помощь</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./libs/jquery.min.js"></script>
+    <script src="./libs/jquery.tabslet.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

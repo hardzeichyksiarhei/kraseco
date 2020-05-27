@@ -1,0 +1,300 @@
+.registration-page,
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 100px 20px;
+}
+
+/* Login Panel */
+
+.registration-panel,
+.login-panel {
+    position: relative;
+    max-width: 100%;
+    width: 460px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: #fff;
+    margin-bottom: 55px;
+}
+
+.registration-panel__header,
+.login-panel__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary);
+    padding: 20px;
+}
+
+.registration-panel__title,
+.login-panel__title {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.registration-panel__body,
+.login-panel__body {
+    padding: 30px 50px;
+    padding-bottom: 0;
+}
+
+.registration-panel__footer,
+.login-panel__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.registration-panel__sub-footer,
+.login-panel__sub-footer {
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #003399;
+    font-size: 16px;
+}
+
+.registration-panel__sub-footer a,
+.login-panel__sub-footer a {
+    color: #003399;
+}
+
+.registration-panel__sub-footer a:hover,
+.login-panel__sub-footer a:hover {
+    text-decoration: none;
+}
+
+/* Login Tabs */
+.registration-tabs__nav,
+.login-tabs__nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #999;
+}
+
+.registration-tabs__nav li,
+.login-tabs__nav li {
+    flex: 1 0 50%;
+    text-align: center;
+    padding: 17px 5px;
+    box-sizing: border-box;
+}
+
+.registration-tabs__nav li.active,
+.login-tabs__nav li.active {
+    border-bottom: 7px solid var(--primary);
+}
+
+.registration-tabs__nav li a,
+.login-tabs__nav li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.registration-tabs__tab,
+.login-tabs__tab {
+    padding: 25px 0;
+}
+
+/* Login Form */
+.registration-form__group,
+.login-form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.registration-form__group:last-of-type,
+.login-form__group:last-of-type {
+    margin-bottom: 0;
+}
+
+.registration-form__label,
+.login-form__label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.registration-form__control,
+.login-form__control {
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.registration-form__control::placeholder,
+.login-form__control::placeholder {
+    color: rgb(146, 146, 146);
+}
+
+.login-form__footer {
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-gap: 15px;
+    gap: 15px;
+}
+
+.registration-form__submit {
+    width: 55%;
+}
+
+.registration-form__meta,
+.login-form__meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.registration-form__meta {
+    margin-top: 15px;
+}
+
+.registration-form__meta label,
+.login-form__meta label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.registration-form__meta label {
+    align-items: flex-start;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.registration-form__meta label a {
+    color: #333;
+}
+
+.registration-form__meta input[type="checkbox"],
+.login-form__meta input[type="checkbox"] {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.registration-form__meta input[type="checkbox"] {
+    margin-top: 1px;
+}
+
+.registration-form__reset-password,
+.login-form__reset-password {
+    position: relative;
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.registration-form__reset-password::before,
+.login-form__reset-password::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary);
+    opacity: 1;
+    transition: .2s all ease;
+}
+
+.registration-form__reset-password:hover::before,
+.login-form__reset-password:hover::before {
+    opacity: 0;
+}
+
+
+
+/* Media */
+@media screen and (max-width: 576px) {
+    .registration-panel, .login-panel {
+        margin-bottom: 105px;
+    }
+
+    .registration-panel__body, .login-panel__body {
+        padding: 30px 20px;
+        padding-bottom: 0;
+    }
+
+    .registration-panel__sub-footer,
+    .login-panel__sub-footer {
+        flex-direction: column;
+        align-items: center;
+        bottom: -95px;
+    }
+
+    .registration-panel__sub-footer a:first-of-type,
+    .login-panel__sub-footer a:first-of-type {
+        padding: 10px 0;
+    }
+
+    .registration-tabs__nav,
+    .login-tabs__nav {
+        flex-direction: column;
+    }
+
+    .registration-tabs__nav li.active,
+    .login-tabs__nav li.active {
+        border-bottom: none;
+        background-color: var(--primary);
+    }
+
+    .registration-tabs__nav li.active a,
+    .login-tabs__nav li.active a {
+        color: #fff;
+    }
+
+    .login-form__footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-form__meta {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .login-form__meta label {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .registration-panel__title, .login-panel__title {
+        font-size: 24px;
+    }
+
+    .registration-form__submit {
+        width: 100%;
+    }
+
+    .registration-panel__footer .btn-link,
+    .login-panel__footer .btn-link {
+        font-size: 16px;
+    }
+}

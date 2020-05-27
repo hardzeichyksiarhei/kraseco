@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login-registration.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-panel">
+            <div class="login-panel__header">
+                <img src="./img/logo.png" alt="Logo">
+                <h2 class="login-panel__title">Личный кабинет</h2>
+            </div>
+            <div class="login-panel__body">
+                <div class="login-tabs">
+                    <ul class="login-tabs__nav">
+                      <li class="active"><a href="#individuals">Физические лица</a></li>
+                      <li class=""><a href="#legal-entities">Юридические лица</a></li>
+                    </ul>
+                    <div id="individuals" class="login-tabs__tab">
+                        <form action="" class="login-form individuals-form">
+                            <div class="login-form__group">
+                                <label for="email" class="login-form__label">Логин</label>
+                                <input id="email" name="email" class="login-form__control" placeholder="E-mail или СНИЛС">
+                            </div>
+                            <div class="login-form__group">
+                                <label for="password" class="login-form__label">Пароль</label>
+                                <input id="password" name="password" type="password" class="login-form__control" placeholder="∗∗∗∗∗∗∗">
+                            </div>
+                            <div class="login-form__footer">
+                                <button class="btn login-form__submit" type="submit">Войти</button>
+                                <div class="login-form__meta">
+                                    <label for="remember"><input id="remember" name="remember" type="checkbox"> Запомнить меня?</label>
+                                    <a href="#" class="login-form__reset-password">Забыли пароль?</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="legal-entities" class="login-tabs__tab">
+                        <form action="" class="login-form legal-entities-form">
+                            <div class="login-form__group">
+                                <label for="inn" class="login-form__label">ИНН</label>
+                                <input id="inn" name="inn" type="text" class="login-form__control" placeholder="1234567890">
+                            </div>
+                            <div class="login-form__group">
+                                <label for="kpp" class="login-form__label">КПП</label>
+                                <input id="kpp" name="kpp" class="login-form__control" placeholder="123456789">
+                            </div>
+                            <div class="login-form__group">
+                                <label for="password" class="login-form__label">Пароль</label>
+                                <input id="password" name="password" type="password" class="login-form__control" placeholder="∗∗∗∗∗∗∗">
+                            </div>
+                            <div class="login-form__footer">
+                                <button class="btn login-form__submit" type="submit">Войти</button>
+                                <div class="login-form__meta">
+                                    <label for="remember"><input id="remember" name="remember" type="checkbox"> Запомнить меня?</label>
+                                    <a href="#" class="login-form__reset-password">Забыли пароль?</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="login-panel__footer">
+                <a href="#" class="btn-link btn-link--active">Регистрация</a>
+                <br/>
+                <a href="#" class="btn-link">Вернуться на сайт</a>
+            </div>
+            <div class="login-panel__sub-footer">
+                <span class="login-panel__copyright">&copy; 2020 АО «КРАСЭКО»</span>
+                <a href="#" target="_blank">Конфиденциальность</a>
+                <a href="#" target="_blank">Помощь</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./libs/jquery.min.js"></script>
+    <script src="./libs/jquery.tabslet.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

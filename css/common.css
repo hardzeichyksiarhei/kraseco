@@ -1,0 +1,245 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #003399;
+    --dark-primary: #001f5e;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background:  #fff url('../img/squares.jpg');
+}
+
+.req {
+    color: #ff0000;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #d0d0d0;
+    border: none;
+    margin: 30px 0;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    background-color: var(--primary);
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    min-height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s background-color ease;
+}
+
+.btn:hover {
+    background-color: var(--dark-primary);
+}
+
+/* Button Link */
+.btn-link {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+    transition: .2s all ease;
+}
+
+.btn-link:hover {
+    color: var(--primary);
+}
+
+.btn-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    opacity: 1;
+    transition: .2s all ease;
+}
+
+.btn-link:hover::before {
+    opacity: 0;
+}
+
+.btn-link--active {
+    color: var(--primary);
+}
+
+.btn-link--active::before {
+    background-color: var(--primary);
+}
+
+
+/* Form */
+.form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form__group--file {
+    margin-bottom: 30px;
+}
+
+.form__group:last-of-type {
+    margin-bottom: 0;
+}
+
+.form__label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form__label span {
+    font-weight: 400;
+}
+
+.form__control {
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.form__submit {
+    width: 200px;
+}
+
+.form__control::placeholder {
+    color: rgb(146, 146, 146);
+}
+
+.form__confirm-group:last-of-type {
+    margin-bottom: 20px;
+}
+
+.form__confirm-label {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.form__confirm-label a {
+    color: #333;
+}
+
+.form__confirm-control {
+    margin: 0;
+    margin-top: 1px;
+    margin-right: 15px;
+}
+
+
+/* File upload */
+.file-upload-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.file-upload-row .file-upload-wrapper {
+    margin-right: 30px;
+}
+
+.file-upload-row .file-upload-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.file-upload-wrapper {  
+    position: relative;
+    width: 200px;
+    height: 48px;
+}
+  
+.file-upload-wrapper:after {
+    content: attr(data-text);
+    font-size: 14px;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: #fff;
+    display: block;
+    pointer-events: none;
+    z-index: 20;
+    color: #999;
+    box-sizing: border-box;
+    font-weight: bold;
+    pointer-events: none;
+}
+  
+.file-upload-wrapper:before {
+    content: "Прикрепить файл";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 48px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: bold;
+    z-index: 25;
+    font-size: 16px;
+    width: 100%;
+    line-height: 48px;
+    padding: 0 15px;
+    pointer-events: none;
+    box-sizing: border-box;
+    text-align: center;
+    transition: .2s background-color ease;
+}
+  
+.file-upload-wrapper:hover::before {
+    background-color: var(--dark-primary);
+}
+.file-upload-wrapper input {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+}
+
+
+/* Media */
+@media screen and (max-width: 576px) {
+    .file-upload-row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .file-upload-row .file-upload-wrapper {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .file-upload-row .file-upload-wrapper:last-of-type {
+        margin-bottom: 0;
+    }
+}
+  

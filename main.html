@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-body container">
+                <img class="header-logo" src="./img/logo.png" alt="Logo">
+                <div class="phone-block">
+                    <span class="phone-block__title">Телефон горячей линии:</span>
+                    <a href="tel:88007754850" class="phone-block__phone">8-800-775-4850</a>
+                </div>
+                <div class="phone-block">
+                    <span class="phone-block__title">Центральный офис:</span>
+                    <a href="tel:+73912286207" class="phone-block__phone">+7 (391) 228-62-07</a>
+                </div>
+                <div class="header-account">
+                    <div class="header-account__icon">
+                        <img src="./img/cabinet.png" alt="Cabinet">
+                    </div>
+                    <div class="header-account__icon-mobile">
+                        <img src="./img/cabinet.png" alt="Cabinet">
+                    </div>
+                    <div class="header-account__body">
+                        <a href="#" class="header-account__name">Александр Иванов</a>
+                        <a href="#" class="header-account__logout">Выйти</a>
+                        <a href="#" class="header-account__link" target="_blank">Перейти на сайт КРАСЭКО</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main container">
+            <div class="alert">
+                <h3 class="alert__title">Уважаемые потребители жилых домов!</h3>
+                <p class="alert__description">Просим Вас соблюдать установленный Президентом России и Губернатором Красноярского края режим самоизоляции для предупреждения распространения короновирусной инфекции! Мы продолжаем предоставлять коммунальные ресурсы для создания Вам благоприятных условий для жизни! И выражаем Вам огромную благодарность за своевременную оплату предоставляемых ресурсов! Для оплаты предлагаем воспользоваться официальным сайтом ПАО «Красноярскэнергосбыт» https://krsk-sbit.ru или услугами в отделениях АО "Почта России".</p>
+                <p class="alert__description">Берегите себя и своих близких!</p>
+
+                <button class="alert__close"><img src="./img/close.svg" alt="Close"></button>
+            </div>
+            <div class="main-body">
+                <aside class="left-sidebar">
+                    <nav class="main-nav">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <img src="./img/noun_warning.png" alt="noun_warning">
+                                    <span>Важные сообщения (3)</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <img src="./img/noun_stopwatch.png" alt="noun_stopwatch">
+                                    <span>Показания и счетчики</span>
+                                </a>
+                            </li>
+                            <li class="menu-item active">
+                                <a href="#" class="menu-link">
+                                    <img src="./img/noun_gear.png" alt="noun_gear">
+                                    <span>Технологическое присоединение</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <img src="./img/noun_doc.png" alt="noun_doc">
+                                    <span>Договоры</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <img src="./img/noun_message.png" alt="noun_message">
+                                    <span>Отправить обращение/документы</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <img src="./img/noun_help.png" alt="noun_help">
+                                    <span>Помощь</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <section class="content">
+                    <div class="content-page request-page">
+                        <h2 class="request-page__title">Заявка на технологическое присоединение</h2>
+                        <div class="request-tabs">
+                            <ul class="request-tabs__nav">
+                              <li class="active"><a href="#individuals">Физическое лица</a></li>
+                              <li class=""><a href="#legal-entities">Юридическое лица</a></li>
+                            </ul>
+                            <div id="individuals" class="request-tabs__tab">
+                                <p>Заявка на технологическое подключение энергопринимающих устройств физического лица, максимальной мощностью до 15 кВт включительно (с учетом ранее присоединенной мощности в данной точке присоединения энергопринимающих устройств) и свыше 15 кВт для бытовых и иных нужд, не связанных с осуществлением предпринимательской деятельности</p>
+                                <p><span class="req">*</span> - поле, обязательное для заполнения</p>
+
+                                <form action="" class="form request-form individuals-request-form">
+                                    <div class="form__group">
+                                        <label for="last_name" class="form__label">Фамилия</label>
+                                        <input id="last_name" name="last_name" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="first_name" class="form__label">Имя</label>
+                                        <input id="first_name" name="first_name" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="middle_name" class="form__label">Отчество</label>
+                                        <input id="middle_name" name="middle_name" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="name_document" class="form__label">Наименование документа, удостоверяющего личность</label>
+                                        <input id="name_document" name="name_document" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="seria_document" class="form__label">Серия документа, удостоверяющего личность</label>
+                                        <input id="seria_document" name="seria_document" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="number_document" class="form__label">Номер документа, удостоверяющего личность</label>
+                                        <input id="number_document" name="number_document" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="date_document" class="form__label">Дата выдачи документа, удостоверяющего личность</label>
+                                        <input id="date_document" name="date_document" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="issued_by_document" class="form__label">Кем выдан документ, удостоверяющий личность</label>
+                                        <input id="issued_by_document" name="issued_by_document" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="inn" class="form__label">ИНН физического лица</label>
+                                        <input id="inn" name="inn" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="address_registration" class="form__label">Адрес регистрации</label>
+                                        <input id="address_registration" name="address_registration" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="address" class="form__label">Место жительства/фактический/почтовый адрес</label>
+                                        <input id="address" name="address" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="mobile_phone" class="form__label">Номер телефона (без +7)</label>
+                                        <input id="mobile_phone" name="mobile_phone" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="city_phone" class="form__label">Номер городского телефона (без +7)</label>
+                                        <input id="city_phone" name="city_phone" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="reason_petition" class="form__label">Причина обращения</label>
+                                        <select id="reason_petition" name="reason_petition" class="form__control">
+                                            <option value="1">Увеличение максимальной можности</option>
+                                            <option value="2">Увеличение максимальной можности</option>
+                                            <option value="3">Увеличение максимальной можности</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="name_device" class="form__label">Наименование присоединяемых энергопринимающих устройств</label>
+                                        <input id="name_device" name="name_device" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="power_device" class="form__label">Максимальная мощность присоединяемых устройств составляет (кВт)</label>
+                                        <input id="power_device" name="power_device" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="voltage" class="form__label">При напряжении (кВ)</label>
+                                        <select id="voltage" name="voltage" class="form__control">
+                                            <option value="1">100</option>
+                                            <option value="2">200</option>
+                                            <option value="3">300</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="reliability_category" class="form__label">Категория надежности энергопринимающих устройств</label>
+                                        <select id="reliability_category" name="reliability_category" class="form__control">
+                                            <option value="1">2 категория надежности</option>
+                                            <option value="2">2 категория надежности</option>
+                                            <option value="3">2 категория надежности</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="design_dates" class="form__label">Сроки проектирования и поэтапного введения в эксплуатацию энергопринимающего устройства<br><span>В формате: Номер этапа - Планируемый срок проектирования энергопринимающих устройств (месяц,год) - Планируемый срок введения энергопринимающих устройств в эксплуатацияю (месяц,год)</span>
+                                        </label>
+                                        <input id="design_dates" name="design_dates" class="form__control">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="guaranteeing_supplier" class="form__label">Гарантирующий поставщик (энергосбытовая организация), с которым планируется заключение договора энергоснабжения (купли-продажи электрической энергии(мощности))</label>
+                                        <input id="guaranteeing_supplier" name="guaranteeing_supplier" class="form__control">
+                                    </div>
+
+                                    <hr class="divider">
+
+                                    <h3 class="request-form__title">Прикрепите приложения</h3>
+                                    <p class="request-form__description">Требования к файлам: не более 1Мб на файл, разрешенные форматы: doc, docx, pdf, png, jpg</p>
+
+                                    <div class="form__group form__group--file">
+                                        <span class="form__label">1. План расположения энергопринимающего устройства, присоединяемого к электрическим сетям сетевой организации</span>
+                                        <div class="file-upload-wrapper" data-text="">
+                                            <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__group form__group--file">
+                                        <span class="form__label">2. Перечень и мощность энергопринимающих устройств, которые могут быть присоединены к устройствам противоаварийной автоматики</span>
+                                        <div class="file-upload-wrapper" data-text="">
+                                            <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__group form__group--file">
+                                        <span class="form__label">3. Копия документа, подтверждающего право собственности или иное предусмотренное законом основание на объект капитального строительства и (или) земельный участок, на котором расположены (будут располагаться) объекты заявителя, либо право или иное предусмотренное законом основание на энеропринимающие устройства</span>
+                                        <div class="file-upload-wrapper" data-text="">
+                                            <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__group form__group--file">
+                                        <span class="form__label">4. Подписанный заявителем проект договора энергоснабжения (купли-продажи (поставки) электрической энергии (мощности) или протокол разногласий к проекту договора, форма которого размещена (опубликована) гарантирующим поставщиком</span>
+                                        <div class="file-upload-wrapper" data-text="">
+                                            <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__group form__group--file">
+                                        <span class="form__label">5. Дополнительно</span>
+                                        <div class="file-upload-row">
+                                            <div class="file-upload-wrapper" data-text="">
+                                                <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                            </div>
+                                            <div class="file-upload-wrapper" data-text="">
+                                                <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                            </div>
+                                            <div class="file-upload-wrapper" data-text="">
+                                                <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__group form__confirm-group">
+                                        <label for="confirm" class="form__confirm-label"><input id="confirm" class="form__confirm-control" name="confirm" type="checkbox"> <span>ознакомлен с <a href="#" target="_blank">публичной офертой</a> и <a href="#" target="_blank">политикой в области обработки персональных данных</a>, все условия принимаю</span></label>
+                                    </div>
+
+                                    <button class="btn form__submit" type="submit">Отправить заявку</button>
+
+                                    <br/>
+                                    <br/>
+                                    <p>Дата направления заявителем через данный сайт заявки на технологическое присоединение не является датой официального поступления заявки в АО «Красноярская региональная энергетическая компания»</p>
+                                        
+                                    <p>Данный сервис предназначен для упрощения процедуры рассмотрения заявки сетевой организацией на предмет корректного заполнения заявителем необходимых сведений и комплектности предоставляемых документов</p>
+                                        
+                                    <p>В соответствии с требованиями пункта 8 «Правил технологического присоединения энергопринимающих устройств потребителей электрической энергии, объектов по производству электрической энергии, а также объектов электросетевого хозяйства, принадлежащих сетевым организациям и иным лицам, к электрическим сетям», утвержденных постановлением Правительства РФ.</p>
+                                </form>
+
+                            </div>
+                            <div id="legal-entities" class="request-tabs__tab">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sunt, optio voluptates corporis rerum consequatur voluptatem quas eum modi alias aliquid nobis ipsum eius sed cumque earum distinctio maxime sequi!</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-body container">
+                <img class="footer-logo" src="./img/logo.png" alt="Logo">
+                <div class="phone-block">
+                    <span class="phone-block__title">Телефон горячей линии:</span>
+                    <a href="tel:88007754850" class="phone-block__phone">8-800-775-4850</a>
+                </div>
+                <div class="phone-block">
+                    <span class="phone-block__title">Центральный офис:</span>
+                    <a href="tel:+73912286207" class="phone-block__phone">+7 (391) 228-62-07</a>
+                </div>
+                <div class="footer__link-block footer__link-block--row">
+                    <img src="./img//map.png" alt="Map">
+                    <a href="#" class="footer__link" target="_blank">Смотреть адрес<br>на карте</a>
+                </div>
+                <div class="footer__link-block">
+                    <a href="#" class="footer__link" target="_blank">Публичная оферта</a>
+                    <a href="#" class="footer__link" target="_blank">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__link-block">
+                    <a href="#" class="footer__link" target="_blank">Создание сайта "FoxUnion"</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./libs/jquery.min.js"></script>
+    <script src="./libs/jquery.tabslet.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>
