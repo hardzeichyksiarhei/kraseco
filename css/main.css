@@ -6,7 +6,7 @@
 
 .container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1240px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -264,7 +264,7 @@
 }
 
 .footer .phone-block__phone {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .footer__link {
@@ -297,7 +297,7 @@
 
 
 /* Media */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .container {
         max-width: 960px;
     }
@@ -405,11 +405,7 @@
     .footer .phone-block__title {
         font-size: 14px;
     }
-
-    .footer .phone-block__phone {
-        font-size: 18px;
-    }
-
+    
     .footer .phone-block {
         margin-top: 20px;
     }
